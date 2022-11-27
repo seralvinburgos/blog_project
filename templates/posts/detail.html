@@ -1,13 +1,29 @@
 {% extends 'base.html' %}
 
 
+
 {% block title %}{{ post.title }}{% endblock %}
 
 
 {% block content %}
+<br>
+<style>
+    .top {
+        background-color: white;
+    }
+    .bottom {
+        background-color: white;
+    }
+</style>
+
+
+<div class="container top p-4">
 <h1>{{ post.title }}</h1>
 <h5>{{ post.subtitle }}</h5>
 <small>Created by: {{ post.author }} | On: {{ post.created_on }}</small>
+</div>
+<br>
+<div class="container bottom p-4">
 <p>{{ post.body }}</p>
 {% if user.username == post.author.username %}
     <p>
@@ -16,5 +32,6 @@
     <p>
         <a href="{% url 'delete' post.id %}" class="btn btn-danger">Delete</a>
     </p>
+</div>
 {% endif %}
 {% endblock content %}

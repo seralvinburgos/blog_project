@@ -1,10 +1,31 @@
 {% extends 'base.html' %}
+{% load static %}
 
 
 {% block title %}Home{% endblock title %}
 
 
 {% block content %}
-<h1>Home</h1>
+<style>
+    .top {
+        /* background-color: white; */
+        height: 5rem;
+        text-align: center;
+    }
+    p {
+        padding-top: 0.7rem;
+        letter-spacing: 15px;
+        font-size: 4.5rem;
+        text-shadow: 4px 4px #5d5d5d63;
+    }
+    span {
+        font-weight: bold;
+    }
+</style>
+
+<br>
+<div class="container top">
+<p>blog<span>book</span></p>
+</div>
 
 {% endblock content %}

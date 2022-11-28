@@ -2,6 +2,16 @@ body {
     background-color: rgb(191, 215, 215);
 }
 
+/* .navbar {
+    background-color: rgb(191, 215, 215);
+    color: black;
+} */
+
+#blogBook {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 h1 {
     margin: 2rem 0;
     color: rgb(43, 43, 43);

@@ -1,10 +1,76 @@
 {% extends 'base.html' %}
 
 
-{% block title %}About Me{% endblock title %}
+{% block title %}About Us{% endblock title %}
 
 
 {% block content %}
-<h1>About</h1>
-<p>I am working on being a software developer</p>
+<style>
+    #titleAbout {
+        font-size: 5rem;
+        color: white;
+        letter-spacing: 2px;
+        line-height: 1;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 4rem;
+        padding-right: 20rem;
+    }
+    .aboutTwo {
+        margin-top: 4rem;
+        background-color: rgb(176, 175, 175);
+    }
+    .secondLeft {
+        height: 25rem;
+        background-image: url(/static/img/second1.jpg);
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .secondRight {
+        height: 25rem;
+        padding: 5rem 10rem 3rem 0;
+        color: white;
+    }
+    #secondTitle {
+        font-size: 2.5rem;
+    }
+    .aboutThree {
+        background-color: white;
+    }
+    #thirdTitle {
+        font-size: 3rem;
+        padding: 2rem 0;
+        text-align: center;
+        font-weight: 500
+        ;
+    }
+    p {
+        padding: 0 10rem 2rem 10rem;
+    }
+
+
+</style>
+
+<br>
+<p id="titleAbout">Helping Creative Ideas Come to Life</p>
+<div class="aboutTwo container-fluid">
+    <div class="secondRow container-fluid d-flex col-12">
+        <div class="secondLeft row col-6">
+
+        </div>
+        <div class="secondRight row col-6">
+            <p id="secondTitle">Your own space</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores maiores animi consectetur explicabo, assumenda perspiciatis voluptates fugiat. Ut corporis nihil, dicta deleniti reprehenderit aperiam ipsam laudantium magni cupiditate fugit soluta nulla ratione sint eos, vel iusto totam accusantium rerum?</p>
+        </div>
+    </div>
+</div>
+<div class="aboutThree container-fluid">
+    <div class="thirdRow container-fluid">
+        <p id="thirdTitle">Lorem ipsum dolor sit amet.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut expedita reiciendis maiores fugit, aperiam, officia eum cum provident hic enim explicabo animi obcaecati. Nostrum, facere sapiente optio dolorum molestiae sed quam exercitationem eum! Earum voluptate, facere est mollitia nostrum beatae.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nesciunt cupiditate maiores odio maxime. Consequatur quae odio aliquid asperiores libero! Nulla voluptates veniam officia fuga molestiae laudantium repellat? Non quae iure sapiente quia voluptas nam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dignissimos vitae magni! Quasi, sunt distinctio quibusdam ratione soluta accusamus hic aliquam minus. A facere magnam consequatur et hic, autem consequuntur dolorum nesciunt recusandae vero cum quasi doloribus voluptate est, omnis alias velit sint quia similique debitis aut? Libero, amet nemo!</p>
+    </div>
+</div>
 {% endblock content %}

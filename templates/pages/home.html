@@ -8,24 +8,107 @@
 {% block content %}
 <style>
     .top {
-        /* background-color: white; */
-        height: 5rem;
-        text-align: center;
+        margin-top: 3rem;
+        background-color: rgb(175, 175, 175);
     }
-    p {
+    .left {
+        height: 25rem;
+        padding-right: 10rem;
+    }
+    .right {
+        height: 25rem;
+        background-image: url(/static/img/right1.jpg);
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #right1 {
+        
+    }
+    #titleLeft {
         padding-top: 0.7rem;
         letter-spacing: 15px;
         font-size: 4.5rem;
-        text-shadow: 4px 4px #5d5d5d63;
+        color: white;
+        text-shadow: 4px 4px #6f6f6f4f;
     }
     span {
         font-weight: bold;
     }
+    #topLtDesc {
+        font-size: large;
+        color: white;
+    }
+    .middle {
+        height: 20rem;
+        background-color: white;
+    }
+    #titleMiddle {
+        font-size: 3.5rem;
+        line-height: 1;
+        padding: 3rem 10rem 0 0;
+    }
+    #middleRtDesc {
+        padding: 5rem 5rem;
+    }
+    .pictureRow {
+        height: 40rem;
+        background-color: rgb(237, 234, 213);
+    }
+    .picLeft {
+        background-image: url(/static/img/picLeft.jpg);
+        background-size: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .picMiddle {
+        background-image: url(/static/img/picMiddle.jpg);
+        background-size: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .picRight {
+        background-image: url(/static/img/picRight.jpg);
+        background-size: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 </style>
 
 <br>
-<div class="container top">
-<p>blog<span>book</span></p>
+<div class="top container-fluid d-flex flex-row">
+    <div class="row col-12">
+        <div class="left col-6 pt-5">
+            <p id="titleLeft">blog<span>book</span></p>
+            <p id="topLtDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quam obcaecati voluptatem iste, a cum, neque sit dolorum rerum, blanditiis quibusdam doloribus. Ipsum consequuntur mollitia quisquam vero magni nam iusto!</p>
+        </div>
+        <div class="right col-6 pt-1">
+            <p></p>
+        </div>
+    </div>
+</div>
+<div class="middle container-fluid d-flex flex-row">
+    <div class="row col-12">
+        <div class="middleLeft col-6 pt-5">
+            <p id="titleMiddle">Start by choosing a theme</p>
+        </div>
+        <div class="middleRight col-6" id="middleRtDesc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem quas culpa, corrupti nobis maiores optio veniam harum praesentium. Quia, debitis veniam. Porro atque distinctio voluptatum ipsam repudiandae corrupti eius.</p>
+        </div>
+    </div>
+</div>
+<div class="pictureRow container-fluid d-flex flex-row">
+    <div class="row col-12 mx-auto">
+        <div class="picLeft col-4">
+
+        </div>
+        <div class="picMiddle col-4">
+
+        </div>
+        <div class="picRight col-4">
+
+        </div>
+    </div>
 </div>
 
 {% endblock content %}

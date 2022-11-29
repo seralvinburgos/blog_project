@@ -18,6 +18,8 @@
         <div class="card-body">
             <h5 class="card-title mb-3">{{ post.title }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ post.subtitle }}</h6>
+            <small>Created by {{ post.author }} | on: {{ post.created_on }}</small>
+            <hr>
             <p class="card-text">{{ post.body|truncatechars:500 }}</p>
             <a href="{% url 'detail' post.id %}" class="card-link">Continue Reading</a>
         </div>

@@ -23,7 +23,7 @@ class Post(models.Model):
     status = models.ForeignKey(
         Status,
         on_delete=models.CASCADE,
-        null=True,
+        default=2
     )
 
     def __str__(self):

@@ -9,12 +9,32 @@ from django.contrib.auth.mixins import (
     UserPassesTestMixin
 )
 from django.urls import reverse_lazy
-from .models import Post
+from .models import Post, Status
 
 
 class PostListView(ListView):
     template_name = "posts/list.html"
     model = Post
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        status = Status.objects.get(id=1)
+        context["post_list"] = Post.objects.filter(
+            status=status).order_by("created_on").reverse()
+        return context
+
+
+class DraftPostListView(LoginRequiredMixin, ListView):
+    template_name = "posts/list.html"
+    model = Post
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        status = Status.objects.get(id=2)
+        context["post_list"] = Post.objects.filter(
+            status=status).filter(author=self.request.user
+            ).order_by("created_on").reverse()
+        return context
 
 
 class PostDetailView(DetailView):

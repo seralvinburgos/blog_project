@@ -1,19 +1,132 @@
 body {
     background-color: rgb(191, 215, 215);
 }
-
 /* .navbar {
     background-color: rgb(191, 215, 215);
     color: black;
 } */
-
 #blogBook {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
 h1 {
     margin: 2rem 0;
     color: rgb(43, 43, 43);
 }
-
+.top {
+    margin-top: 1.5rem;
+    background-color: rgb(175, 175, 175);
+}
+.left {
+    height: 25rem;
+    padding-right: 10rem;
+}
+.right {
+    height: 25rem;
+    background-image: url(/static/img/right1.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#right1 {
+    
+}
+#titleLeft {
+    padding-top: 0.7rem;
+    letter-spacing: 15px;
+    font-size: 4.5rem;
+    color: white;
+    text-shadow: 4px 4px #6f6f6f4f;
+}
+#titleAbout {
+    font-size: 3.2rem;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    padding-right: 20rem;
+}
+.aboutTwo {
+    margin-top: 2rem;
+    background-color: rgb(176, 175, 175);
+}
+.secondLeft {
+    height: 25rem;
+    background-image: url(/static/img/second1.jpg);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.secondRight {
+    height: 25rem;
+    padding: 4rem 10rem 3rem 0;
+    color: white;
+}
+#secondTitle {
+    font-size: 2.5rem;
+}
+.aboutThree {
+    background-color: white;
+}
+#thirdTitle {
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    font-weight: 500
+    ;
+}
+p {
+    padding: 0 10rem 2rem 10rem;
+}
+span {
+    font-weight: bold;
+}
+#topLtDesc {
+    font-size: large;
+    color: white;
+}
+.middle {
+    height: 20rem;
+    background-color: white;
+}
+#titleMiddle {
+    font-size: 3.2rem;
+    line-height: 1;
+    padding: 1.5rem 10rem 0 0;
+}
+#middleRtDesc {
+    padding: 5rem 5rem;
+}
+.pictureRow {
+    height: 38rem;
+    background-color: rgb(237, 234, 213);
+}
+.picLeft {
+    background-image: url(/static/img/picLeft.jpg);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.picMiddle {
+    background-image: url(/static/img/picMiddle.jpg);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.picRight {
+    background-image: url(/static/img/picRight.jpg);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h5 {
+    color: rgb(0, 0, 0);
+}
+.topBox {
+    background-color: white;
+}
+.bottomBox {
+    background-color: white;
+}
